@@ -29,7 +29,7 @@ The development roadmap will be a way for SpiderOak to share planned future chan
 
 ## Project Management
 
-SpiderOak uses an Agile development process to develope Aranya.
+SpiderOak uses an Agile development process to develop Aranya.
 
 This GitHub project contains a SCRUM board that plans effort in 2-week sprints:
 https://github.com/orgs/aranya-project/projects/1
@@ -195,7 +195,7 @@ A PR can typically be marked as "Ready For Review" when it meets the following c
 - Code is compiling.
 - Lints have been resolved.
 - CICD tests are passing.
-- Intended functionality as been implemented.
+- Intended functionality has been implemented.
 - Relevant unit and/or integration tests have been added.
 - Relevant documentation has been updated.
 
