@@ -11,15 +11,7 @@ Before contributing, we recommend that you spend some time getting familiar with
 [overview.md](docs/overview.md)
 [walkthrough.md](docs/walkthrough.md)
 
-Aranya is primarily written in Rust.
-We recommend that contributors learn Rust first:
-- Overview: https://www.rust-lang.org/learn
-- "The Book": https://doc.rust-lang.org/book/
-- Standard Library API: https://doc.rust-lang.org/std/index.html
-- Rust by Example: https://doc.rust-lang.org/stable/rust-by-example/
-- Playground (test and share snippets): https://play.rust-lang.org/
-- Async: https://rust-lang.github.io/async-book/
-- Useful third-party libraries: https://blessed.rs
+Aranya is primarily written in Rust. For useful references on learning Rust, see the [Resources](#resources) section.
 
 ## Our Roadmap
 
@@ -73,7 +65,8 @@ https://github.com/aranya-project/aranya/issues
 More information on creating GitHub issues can be found here:
 [Creating A GitHub Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue)
 
-Add the `bug` label to the issue.
+A bug reporting template has been created to make it easier to submit bug reports:
+[Bug template](.github/ISSUE_TEMPLATE/bug_template.yml)
 
 The team will now be able to view and respond to the bug report.
 
@@ -90,7 +83,8 @@ https://github.com/aranya-project/aranya/issues
 More information on creating GitHub issues can be found here:
 [Creating A GitHub Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue)
 
-Add any relevant labels to the issue.
+A feature request template has been created to make it easier to request new features:
+[Feature request template](.github/ISSUE_TEMPLATE/feature_template.yml)
 
 If you're planning to open a pull request for the feature, assign yourself to the issue.
 
@@ -133,95 +127,13 @@ https://github.com/aranya-project/aranya/pulls
 More information on opening pull requests can be found here:
 [Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 
+A pull request template has been created to make it easier to open new pull requests:
+[Pull request template](.github/PULL_REQUEST_TEMPLATE/pull_request_template.yml)
+
 Request code review from relevant code owners [CODEOWNERS.md](CODEOWNERS.md).
 
 More information on code owners can be found here:
 [Code Owners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
-
-The following criteria are used to determine if a pull request can be merged into the protected `main` branch:
-- Code has been properly formatted (`cargo make fmt`)
-- Lint checks are passing
-- Code can be compiled
-- Unit tests are passing (`cargo make unit-tests`)
-- Integration tests are passing
-- All GitHub Actions CICD (Continous Integration Continous Delivery) jobs have passed.
-- All discussions on the pull request have been addressed and resolved
-- Pull request has been reviewed and approved by relevant code owners on the development team at SpiderOak [CODEOWNERS.md](CODEOWNERS.md).
-
-## Github Issue Creation Guidelines
-
-Create a new issue here for the feature request:
-https://github.com/aranya-project/aranya/issues
-
-More information on creating GitHub issues can be found here:
-[Creating A GitHub Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue)
-
-Try to fill out as much information as possible when creating an issue:
-- Title
-- Description
-- Assignee(s)
-- Labels
-- Project(s)
-- Milestone (if applicable)
-- Development branch(es)
-- Status (e.g. backlog)
-- Story point estimate
-- Links to other relevant issues, discussions, or documentation
-
-Here are some suggestions for how to write good user stories in issue descriptions:
-https://www.easyagile.com/blog/how-to-write-good-user-stories-in-agile-software-development/
-
-Here are some guidelines for adding story point estimates to issues:
-| Story Point Estimate | Amount of Effort Required | Estimated Time Needed                    | Example scenarios                          |
-| -------------------- | ------------------------- | ---------------------------------------- | ------------------------------------------ |
-| 0                    | Tiny                      | Minutes to hours                         | Task in review or typos to fix             |
-| 1                    | Minimum effort            | A day or less                            | Small bug or fixes from review comments    |
-| 2                    | Slight effort             | 2-3 days                                 | Bug fix, cleanup, test                     |
-| 3                    | Mild effort               | A week or less                           | Small feature                              |
-| 5                    | Moderate effort           | A sprint or less                         | Regular feature                            |
-| 8                    | High effort               | More than a sprint. A few weeks.         | Implementing features of a multi-part spec |
-| 13                   | Maximum effort            | Too high to know. Requires more research | Design and implementation of a new feature |
-
-## Pull Request Review Guidelines
-
-Please keep pull request reviews professional and informative.
-
-We encourage developers to open draft PRs early in the development cycle.
-This allows other developers to be aware of changes and start providing feedback.
-Once a PR is ready for more formal review, it can be marked as "Ready For Review".
-
-A PR can typically be marked as "Ready For Review" when it meets the following criteria:
-- Code is formatted.
-- Code is compiling.
-- Lints have been resolved.
-- CICD tests are passing.
-- Intended functionality has been implemented.
-- Relevant unit and/or integration tests have been added.
-- Relevant documentation has been updated.
-
-The purpose of reviewing PRs is to:
-- Improve code quality (functionality, maintainability, readability, thread-safety, etc.).
-- Catch potential security bugs before they are introduced.
-- Allow developers with knowledge of various parts of the project or various domain knowledge to provide feedback.
-- Verify that CICD tests/builds are passing.
-- Ensure that the implementation aligns with the intended vision for the issue.
-- Distribute knowledge of various system components across the team.
-- Determine whether a specification needs to be written before merging the implementation.
-- Ensure that coding standards are followed.
-- Encourage more documentation where needed.
-- Evaluate architectural properties (performance, scalability, reliability, modularity, etc.).
-
-We differentiate between various types of feedback:
-- Requesting a change (must be changed before approving a PR).
-- Comments. Suggestions for improving the PR.
-- Nitpick. A minor issue or preference. Will not prevent a PR from being merged. Nitpick comments are prefaced with a "nit:".
-
-In general, reviewers are assigned to a PR based on the following criteria:
-- Relevant domain/language knowledge.
-- Past experience working on similar issues.
-- Past experience working on a particular part of the codebase.
-- Interest in working on or learning about a particular part of the codebase.
-- It is not practical for every team member to review every PR. And too many reviewers could cause the review cycle to take too much time. Generally, 1 primary reviewer and 1 other person to check for obvious errors or funny business is recommended. Feel free to read PRs you are not assigned as a reviewer on and comment with questions/feedback.
 
 ## Testing
 
@@ -251,3 +163,14 @@ Please open a Q&A discussion for any general questions:
 https://github.com/orgs/aranya-project/discussions/categories/q-a
 
 You can also ask for help in a PR comment or in a discussion on the associated GitHub issue.
+
+## Resources
+
+Rust Resources:
+- Overview: https://www.rust-lang.org/learn
+- "The Book": https://doc.rust-lang.org/book/
+- Standard Library API: https://doc.rust-lang.org/std/index.html
+- Rust by Example: https://doc.rust-lang.org/stable/rust-by-example/
+- Playground (test and share snippets): https://play.rust-lang.org/
+- Async: https://rust-lang.github.io/async-book/
+- Useful third-party libraries: https://blessed.rs
