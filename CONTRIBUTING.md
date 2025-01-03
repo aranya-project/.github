@@ -13,12 +13,6 @@ Before contributing, we recommend that you spend some time getting familiar with
 
 Aranya is primarily written in Rust. For useful references on learning Rust, see the [Resources](#resources) section.
 
-## Our Roadmap
-
-Coming soon.
-
-The development roadmap will be a way for SpiderOak to share planned future changes with the development community.
-
 ## Project Management
 
 SpiderOak uses an Agile development process to develop Aranya.
