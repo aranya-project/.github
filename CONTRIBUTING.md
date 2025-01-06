@@ -146,7 +146,7 @@ Here's a link to our code of conduct:
 
 ## Style Guide And Coding Conventions
 
-We use `rustfmt` to automatically format code:
+We use nightly `rustfmt` to automatically format code:
 https://github.com/rust-lang/rustfmt
 
 Run this command to format code before pushing code to a development branch:
