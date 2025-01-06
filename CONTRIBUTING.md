@@ -31,6 +31,9 @@ Install `cargo make`:
 Keep your toolchain updated by periodically running:
 `rustup update`
 
+The Minimum Supported Rust Version (MSRV) can be found by opening a repository's top-level `Cargo.toml` file and looking for the following line:
+`rust-version = "<Rust version>"`
+
 Install your favorite IDE to edit the source code.
 
 If using VSCode, we recommend these settings to automatically format and lint saved files:
