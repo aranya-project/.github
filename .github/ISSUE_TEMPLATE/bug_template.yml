@@ -50,6 +50,7 @@ body:
       label: Relevant log output
       description: If you have any relevant logging info, please put it here.
       placeholder: Logs
+      value: "Logs"
       render: shell
   - type: textarea
     id: reproduce
