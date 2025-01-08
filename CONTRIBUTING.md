@@ -87,16 +87,7 @@ If you're planning to open a pull request for the feature, assign yourself to th
 
 ## How To Submit Changes
 
-First, clone the repository:
-`git clone https://github.com/aranya-project/aranya`
-or
-`git clone git@github.com:aranya-project/aranya.git`
-
-Create a new branch for your changes:
-`git checkout -b <branch>`
-
-You can alternatively create a development branch directly from an existing issue:
-[Creating branch from existing issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-a-branch-for-an-issue)
+First, fork the repository and clone your fork.
 
 Make some changes using your favorite IDE.
 
@@ -108,15 +99,7 @@ cargo make unit-tests
 cargo make correctness
 ```
 
-Commit the changes to the branch:
-```
-git add .
-git commit -m "commit message"
-git push
-```
-
-Note: when pushing commits for the first time, you may need:
-`git push --set-upstream origin <branch>`
+Commit the changes and push them to the fork.
 
 Open a pull request here for your branch:
 https://github.com/aranya-project/aranya/pulls
